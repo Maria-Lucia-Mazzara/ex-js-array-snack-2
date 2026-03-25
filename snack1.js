@@ -54,4 +54,8 @@ const books = [
 
 const longBooks = books.filter(book => book.pages > 300)
 
-longBooks.forEach(book => console.log(book.title))
+// longBooks.forEach(book => console.log(book.title)) //array di oggetti
+
+const longBooksTitles = longBooks.map(book => book.title)
+
+longBooksTitles.forEach(title => console.log(title)) //array di stringhe
